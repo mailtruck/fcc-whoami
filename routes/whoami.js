@@ -14,13 +14,13 @@ router.get('/', function(req, res, next) {
 
 });
 
-var fixIp = function(){
+var fixIp = function(ip){
   return ip.split(':').reverse()[0];
 };
 
 
 var fixLanguage = function(lang){
-  return lang.split(,)[0];
+  return lang.split(',')[0];
 };
 
 module.exports = router;
